@@ -131,6 +131,31 @@ void check_leftswitch()
    }
 
 
+//stm32.h file
+
+#ifndef STM32_H_
+#define STM32_H_
+
+#define RCC 0x40023800 //base address of RCC
+#define GPIOB 0X40020400  //base address of GPIOB
+#define GPIOC 0x40020800  //base address of GPIOC
+
+#define AHB1ENR *(volatile uint32_t*)(RCC+0x30)  //address of AHB1 Clock enable
+
+#define GPIOB_MODER *(volatile uint32_t*)(GPIOB+0x00) //GPIOB Output type register
+#define GPIOB_OTYPER *(volatile uint32_t*)(GPIOB+0x04) // GPIOB Output type register
+#define GPIOB_OSPEEDR *(volatile uint32_t*)(GPIOB+0x08) // GPIOB Output speed register
+#define GPIOB_ODR *(volatile uint32_t*)(GPIOB+0x14) // GPIOB output data register
+#define GPIOB_IDR *(volatile uint32_t*)(GPIOB+0x10)//GPIOB Input data register
+
+
+#define GPIOC_MODER *(volatile uint32_t*)(GPIOC+0x00)//GPIOC Output type register
+#define GPIOC_OTYPER *(volatile uint32_t*)(GPIOC+0x04) //GPIOC output type register
+#define GPIOC_OSPEEDR *(volatile uint32_t*)(GPIOC+0x08) //GPIOC Output speed register
+#define GPIOC_ODR *(volatile uint32_t*)(GPIOC+0x14) //GPIOC output data register
+
+
+
 
 
 
