@@ -1,4 +1,4 @@
-//first codde
+******************************//first codde
 /**
  ******************************************************************************
  * @file           : main.c
@@ -131,7 +131,7 @@ void check_leftswitch()
    }
 
 
-//stm32.h file of first program,i have used bare metal programming
+**********************//stm32.h file of first program,i have used bare metal programming
 
 #ifndef STM32_H_
 #define STM32_H_
@@ -155,7 +155,9 @@ void check_leftswitch()
 #define GPIOC_ODR *(volatile uint32_t*)(GPIOC+0x14) //GPIOC output data register
 
 
-/*****************************
+/*************************************
+**************************************
+********************************8
 //problem 2
 //i have used cmsis
 #include <stdint.h>
